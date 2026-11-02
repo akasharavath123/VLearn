@@ -1,0 +1,485 @@
+/* ── RuPay Payment Page Styles ── */
+.payment-page-container {
+  padding: 50px 9% 80px;
+  background: #f8fafc;
+  min-height: calc(100vh - 160px);
+}
+
+.payment-checkout-layout {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 36px;
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+.payment-form-card,
+.payment-summary-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  padding: 36px;
+  box-shadow: 0 12px 36px #243d7508;
+}
+
+.rupay-brand-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border);
+}
+
+.rupay-logo-badge {
+  font-family: "Manrope", sans-serif;
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.rupay-orange {
+  color: #ea580c;
+}
+.rupay-green {
+  color: #16a34a;
+}
+.rupay-sub {
+  font-size: 14px;
+  color: #475569;
+}
+
+.npci-badge {
+  font-size: 11px;
+  font-weight: 700;
+  color: #047857;
+  background: #d1fae5;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+.payment-form-card h2 {
+  font-family: "Manrope", sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  margin: 0 0 6px;
+}
+
+.rupay-hint {
+  color: var(--muted);
+  font-size: 13px;
+  margin: 0 0 20px;
+}
+
+/* Payment tabs */
+.payment-method-tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.pm-tab {
+  padding: 12px;
+  border: 2px solid var(--border);
+  background: #f8fafc;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.pm-tab.active {
+  border-color: var(--primary);
+  background: #eef2ff;
+  color: var(--primary);
+}
+
+/* Card Visual Mockup */
+.rupay-card-visual {
+  background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #3b82f6 100%);
+  border-radius: 16px;
+  padding: 22px 26px;
+  color: white;
+  margin-bottom: 24px;
+  box-shadow: 0 10px 25px rgba(30, 58, 138, 0.35);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chip-icon {
+  font-size: 24px;
+  color: #fbbf24;
+}
+
+.card-brand-label {
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+.card-brand-label span {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #93c5fd;
+  display: block;
+  letter-spacing: 2px;
+}
+
+.card-number-display {
+  font-family: monospace;
+  font-size: 18px;
+  letter-spacing: 3px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.card-bottom-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-bottom-row small {
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  color: #93c5fd;
+  display: block;
+}
+
+.card-bottom-row p {
+  margin: 2px 0 0;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.rupay-card-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.pay-submit-btn {
+  width: 100%;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 800;
+  border-radius: 12px;
+  background: #16a34a;
+  border: none;
+  margin-top: 6px;
+}
+.pay-submit-btn:hover {
+  background: #15803d;
+}
+
+.security-badges-row {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  font-size: 11px;
+  color: var(--muted);
+  font-weight: 600;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.upi-info-banner {
+  display: flex;
+  gap: 14px;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 12px;
+  padding: 16px;
+  font-size: 13px;
+}
+
+.upi-info-banner span {
+  font-size: 24px;
+}
+
+.upi-info-banner p {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+/* Order Summary */
+.payment-summary-card h3 {
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  margin: 0 0 18px;
+}
+
+.summary-course-thumb {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  background: #f8fafc;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 14px;
+  margin-bottom: 20px;
+}
+
+.summary-thumb-icon {
+  width: 52px;
+  height: 52px;
+  background: var(--primary);
+  color: white;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.summary-course-thumb h4 {
+  margin: 0 0 4px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.summary-course-thumb p {
+  margin: 0 0 6px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.summary-badge {
+  font-size: 10px;
+  font-weight: 800;
+  background: #e0e7ff;
+  color: #3730a3;
+  padding: 2px 8px;
+  border-radius: 12px;
+  text-transform: uppercase;
+}
+
+.summary-line-items {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.summary-line {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #475569;
+}
+
+.summary-discount {
+  color: #16a34a;
+  font-weight: 700;
+}
+
+.summary-divider {
+  height: 1px;
+  background: var(--border);
+  margin: 4px 0;
+}
+
+.summary-total {
+  font-size: 18px;
+  color: var(--text);
+  font-family: "Manrope", sans-serif;
+}
+
+.summary-guarantee-box {
+  display: flex;
+  gap: 12px;
+  background: #ecfdf5;
+  border: 1px solid #a7f3d0;
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.guarantee-icon {
+  font-size: 24px;
+}
+
+.summary-guarantee-box strong {
+  display: block;
+  font-size: 13px;
+  color: #065f46;
+}
+
+.summary-guarantee-box p {
+  margin: 4px 0 0;
+  font-size: 12px;
+  color: #047857;
+  line-height: 1.4;
+}
+
+/* Success Card */
+.payment-success-card {
+  max-width: 600px;
+  margin: 40px auto;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 44px;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+}
+
+.success-check-icon {
+  width: 72px;
+  height: 72px;
+  background: #dcfce7;
+  color: #16a34a;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 34px;
+  font-weight: 900;
+  margin: 0 auto 16px;
+}
+
+.rupay-verified-tag {
+  font-size: 11px;
+  font-weight: 800;
+  background: #fef3c7;
+  color: #b45309;
+  padding: 4px 12px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.payment-success-card h1 {
+  font-family: "Manrope", sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  margin: 12px 0 6px;
+}
+
+.success-subtitle {
+  color: var(--muted);
+  font-size: 15px;
+  margin-bottom: 24px;
+}
+
+.receipt-box {
+  background: #f8fafc;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 18px 20px;
+  margin-bottom: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+}
+
+.receipt-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.receipt-row span {
+  color: var(--muted);
+}
+
+.success-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.start-learning-btn {
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+/* OTP Modal */
+.otp-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(4px);
+  display: grid;
+  place-items: center;
+  z-index: 9999;
+  padding: 20px;
+}
+
+.otp-modal-box {
+  background: white;
+  border-radius: 20px;
+  padding: 32px;
+  max-width: 440px;
+  width: 100%;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
+}
+
+.otp-bank-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--muted);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 12px;
+}
+
+.otp-modal-box h3 {
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  margin: 0 0 8px;
+}
+
+.otp-modal-box p {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.5;
+  margin-bottom: 18px;
+}
+
+.otp-input-wrap label {
+  font-size: 12px;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.otp-input-wrap input {
+  width: 100%;
+  padding: 14px;
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: 8px;
+  font-family: monospace;
+  font-weight: 800;
+  border: 2px solid var(--primary);
+  border-radius: 12px;
+  outline: none;
+}
+
+.otp-actions {
+  margin-top: 22px;
+}
+
+@media (max-width: 900px) {
+  .payment-checkout-layout {
+    grid-template-columns: 1fr;
+  }
+}
+

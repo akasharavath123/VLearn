@@ -1,0 +1,241 @@
+/* ── Doubts & Peer Community Styles ── */
+.community-page-container {
+  padding: 50px 9% 80px;
+  background: #f8fafc;
+  min-height: calc(100vh - 160px);
+}
+
+.community-layout-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  padding: 40px;
+  max-width: 960px;
+  margin: 0 auto;
+  box-shadow: 0 12px 36px #243d7508;
+}
+
+.community-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.community-header h1 {
+  font-family: "Manrope", sans-serif;
+  font-size: 26px;
+  font-weight: 800;
+  margin: 8px 0 4px;
+}
+
+.community-header p {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 0;
+}
+
+.community-create-form {
+  background: #f8fafc;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 34px;
+}
+
+.community-create-form h3 {
+  font-family: "Manrope", sans-serif;
+  font-size: 17px;
+  font-weight: 800;
+  margin: 0 0 4px;
+}
+
+.community-create-form input,
+.community-create-form textarea {
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  font-size: 14px;
+  font-family: inherit;
+  background: white;
+  outline: none;
+}
+
+.threads-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.threads-container h3 {
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  margin: 0 0 8px;
+}
+
+.thread-card {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 22px;
+  background: white;
+  box-shadow: 0 4px 12px #243d7506;
+}
+
+.thread-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+
+.resolve-status-pill {
+  font-size: 11px;
+  font-weight: 800;
+  padding: 3px 10px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+.resolve-status-pill.resolved {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.resolve-status-pill.open {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.thread-question {
+  font-family: "Manrope", sans-serif;
+  font-size: 17px;
+  font-weight: 800;
+  margin: 0 0 4px;
+  line-height: 1.35;
+}
+
+.thread-author {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.resolve-toggle-btn {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  color: var(--primary);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.like-counter-btn {
+  background: #fff1f2;
+  border: 1px solid #fecdd3;
+  color: #e11d48;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.thread-details {
+  font-size: 14px;
+  color: var(--text);
+  line-height: 1.6;
+  margin: 0 0 16px;
+}
+
+.thread-replies-list {
+  border-top: 1px solid var(--border);
+  padding-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.reply-bubble {
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-size: 13px;
+}
+
+.instructor-reply {
+  background: #f0fdf4;
+  border-left: 4px solid #16a34a;
+}
+
+.peer-reply {
+  background: #f8fafc;
+  border-left: 4px solid var(--primary);
+}
+
+.reply-author-line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.reply-author-line strong {
+  font-size: 12px;
+  color: var(--text);
+}
+
+.reply-author-line small {
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.reply-bubble p {
+  margin: 0;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.awaiting-instructor {
+  font-size: 12px;
+  color: #b45309;
+  font-style: italic;
+  margin: 4px 0;
+}
+
+.reply-input-row {
+  display: flex;
+  gap: 10px;
+}
+
+.reply-input-row input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  font-size: 13px;
+  font-family: inherit;
+  outline: none;
+}
+
+.reply-btn {
+  padding: 10px 18px;
+  font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  .community-layout-card {
+    padding: 24px 18px;
+  }
+}
+

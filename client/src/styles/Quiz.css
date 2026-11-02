@@ -1,0 +1,290 @@
+/* ── Quiz & Assignment Styles ── */
+.quiz-page-container {
+  padding: 50px 9% 80px;
+  background: #f8fafc;
+  min-height: calc(100vh - 160px);
+}
+
+.quiz-wrapper-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  padding: 40px;
+  max-width: 860px;
+  margin: 0 auto;
+  box-shadow: 0 12px 36px #243d7508;
+}
+
+.quiz-header-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.quiz-header-banner h1 {
+  font-family: "Manrope", sans-serif;
+  font-size: 26px;
+  font-weight: 800;
+  margin: 8px 0 4px;
+}
+
+.quiz-header-banner p {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Score banner */
+.quiz-score-banner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 24px 28px;
+  border-radius: 16px;
+  margin-bottom: 30px;
+}
+
+.quiz-score-banner.passed {
+  background: #ecfdf5;
+  border: 2px solid #a7f3d0;
+  color: #065f46;
+}
+
+.quiz-score-banner.failed {
+  background: #fff1f2;
+  border: 2px solid #fecdd3;
+  color: #9f1239;
+}
+
+.score-icon {
+  font-size: 40px;
+}
+
+.quiz-score-banner h2 {
+  font-family: "Manrope", sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  margin: 0 0 4px;
+}
+.quiz-score-banner p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Questions */
+.quiz-questions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.quiz-question-box {
+  background: #f8fafc;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+  transition: all 0.2s;
+}
+
+.quiz-question-box.q-correct {
+  border-color: #86efac;
+  background: #f0fdf4;
+}
+
+.quiz-question-box.q-incorrect {
+  border-color: #fca5a5;
+  background: #fef2f2;
+}
+
+.q-number-title {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.q-badge {
+  font-size: 12px;
+  font-weight: 800;
+  background: var(--primary);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 8px;
+}
+
+.q-number-title h3 {
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.quiz-options-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.quiz-choice-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.quiz-choice-item:hover {
+  border-color: var(--primary);
+  background: #f8faff;
+}
+
+.quiz-choice-item.opt-selected {
+  border-color: var(--primary);
+  background: #eff6ff;
+  box-shadow: 0 0 0 2px var(--primary);
+}
+
+.quiz-choice-item.opt-correct-target {
+  border-color: #16a34a;
+  background: #dcfce7;
+  font-weight: 700;
+}
+
+.quiz-choice-item.opt-wrong-target {
+  border-color: #dc2626;
+  background: #fee2e2;
+  text-decoration: line-through;
+}
+
+.choice-letter {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #e2e8f0;
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.opt-selected .choice-letter {
+  background: var(--primary);
+  color: white;
+}
+
+.choice-text {
+  font-size: 14px;
+  color: var(--text);
+}
+
+.q-explanation-box {
+  background: white;
+  border-left: 3px solid #16a34a;
+  padding: 12px 16px;
+  border-radius: 0 8px 8px 0;
+  margin-top: 14px;
+  font-size: 13px;
+  color: var(--text);
+}
+
+.submit-quiz-btn {
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 800;
+  border-radius: 12px;
+  margin-top: 12px;
+}
+
+/* ── Assignment Page Styles ── */
+.grade-result-banner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #ecfdf5;
+  border: 2px solid #a7f3d0;
+  border-radius: 16px;
+  padding: 20px 24px;
+  margin-bottom: 24px;
+}
+
+.grade-trophy {
+  font-size: 36px;
+}
+
+.grade-result-banner h3 {
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  margin: 0 0 4px;
+  color: #065f46;
+}
+
+.grade-result-banner p {
+  margin: 0;
+  font-size: 13px;
+  color: #047857;
+}
+
+.assignment-brief-card {
+  background: #f8fafc;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.assignment-brief-card h4 {
+  font-family: "Manrope", sans-serif;
+  font-size: 17px;
+  font-weight: 800;
+  margin: 0 0 10px;
+}
+
+.instructions-callout {
+  background: white;
+  border-left: 4px solid var(--primary);
+  padding: 12px 16px;
+  border-radius: 0 8px 8px 0;
+  margin-top: 14px;
+  font-size: 13px;
+}
+
+.assignment-submit-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.assignment-submit-card h4 {
+  font-family: "Manrope", sans-serif;
+  font-size: 17px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.submit-assignment-action {
+  padding: 14px;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+.submitted-time-sub {
+  font-size: 12px;
+  color: var(--muted);
+}
+

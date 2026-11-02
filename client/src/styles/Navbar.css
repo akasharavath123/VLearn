@@ -1,0 +1,56 @@
+/* Navbar extra styles (base styles in index.css) */
+.nav-dashboard-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 18px;
+  border-radius: 9px;
+  font-size: 14px;
+  font-weight: 700;
+  background: white;
+  color: var(--text);
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.nav-dashboard-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.nav-logout-btn {
+  padding: 10px 16px;
+  font-size: 13px;
+}
+
+.nav-user-cluster {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-role-badge {
+  font-size: 11px;
+  font-weight: 800;
+  padding: 4px 10px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.role-badge-student {
+  background: #e9f0ff;
+  color: var(--primary);
+  border: 1px solid #c9daff;
+}
+
+.role-badge-instructor {
+  background: #fdf2e9;
+  color: #c05621;
+  border: 1px solid #fed7aa;
+}
+
+.nav-highlight-link {
+  color: var(--primary) !important;
+  font-weight: 700 !important;
+}
